@@ -1,0 +1,34 @@
+version: 1
+applications:
+  - appRoot: apps/docs
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm run install
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        files:
+          - "**/*"
+        baseDirectory: .next
+      cache:
+        paths:
+          - node_modules/**/*
+  - appRoot: apps/web
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm run install
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        files:
+          - "**/*"
+        baseDirectory: .next
+      cache:
+        paths:
+          - node_modules/**/*
