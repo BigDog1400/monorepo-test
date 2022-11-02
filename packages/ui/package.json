@@ -13,7 +13,7 @@
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "react": "^18.2.0",
-    "@blind/tsconfig": "*",
+    "@bigdog1400/tsconfig": "*",
     "typescript": "^4.5.2"
   }
 }

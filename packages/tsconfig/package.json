@@ -1,7 +1,7 @@
 {
-  "name": "@blind/tsconfig",
+  "name": "@bigdog1400/tsconfig",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "files": [
     "base.json",
     "nextjs.json",
