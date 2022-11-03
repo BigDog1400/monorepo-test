@@ -1,5 +1,6 @@
-import { Button, ButtonGroup, Stack } from "@chakra-ui/react";
+import { Box, Button, ButtonGroup } from "@chakra-ui/react";
 import { add } from "math-helpers";
+import { Card, Pagination } from "styled-ui";
 
 export default function Web() {
   return (
@@ -9,6 +10,19 @@ export default function Web() {
         <Button onClick={() => alert(add(1, 2))}>Sumar 1 + 2</Button>
         <Button variant={"brandPrimary"}>Chakra Button</Button>
       </ButtonGroup>
+      <Card />
+      <Box
+        bg="#edf3f8"
+        _dark={{
+          bg: "#3e3e3e",
+        }}
+        w="fit-content"
+        p={5}
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Pagination />
+      </Box>
     </div>
   );
 }
