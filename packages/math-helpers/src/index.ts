@@ -1,5 +1,6 @@
 export const add = (a: number, b: number) => {
   // this is a comment
+  debugger;
   return a + b;
 };
 
