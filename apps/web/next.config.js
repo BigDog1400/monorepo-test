@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   experimental: {
-    transpilePackages: ["@bigdog1400/ui"],
+    transpilePackages: ["@bigdog1400/ui", "math-helpers"],
   },
 };
