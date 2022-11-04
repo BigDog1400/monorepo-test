@@ -1,5 +1,5 @@
 import { Box, Button, ButtonGroup } from "@chakra-ui/react";
-import { add } from "math-helpers";
+import { add, multiply } from "math-helpers";
 import { Card, Pagination } from "styled-ui";
 
 export default function Web() {
@@ -8,6 +8,7 @@ export default function Web() {
       <h1>Web</h1>
       <ButtonGroup>
         <Button onClick={() => alert(add(1, 2))}>Sumar 1 + 2</Button>
+        <Button onClick={() => alert(multiply(1, 2))}>Multiplicar 1 * 2</Button>
         <Button variant={"brandPrimary"}>Chakra Button</Button>
       </ButtonGroup>
       <Card />
